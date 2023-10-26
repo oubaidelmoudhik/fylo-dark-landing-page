@@ -1,0 +1,9 @@
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    list-style-type: none;
+    gap: 2rem;
+}
