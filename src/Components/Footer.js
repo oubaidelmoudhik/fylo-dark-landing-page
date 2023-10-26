@@ -1,6 +1,12 @@
 import Logo from "./Logo";
 import phoneIcon from "./icon-phone.svg";
 import emailIcon from "./icon-email.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebookF,
+    faTwitter,
+    faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function FooterMenu({ items }) {
     let menuList = items.map((item) => {
@@ -12,7 +18,7 @@ function FooterMenu({ items }) {
 
 function Footer() {
     return (
-        <footer>
+        <footer className="footer flex">
             <div>
                 <Logo />
                 <p>
@@ -37,7 +43,11 @@ function Footer() {
             <div>
                 <FooterMenu items={["Contact Us", "Terms", "Privacy"]} />
             </div>
-            <div></div>
+            <div>
+                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faInstagram} />
+            </div>
         </footer>
     );
 }

@@ -1,9 +1,9 @@
 import Logo from "./Logo";
 
 function MenuItem({ links }) {
-    let navLinks = links.map((link) => {
+    let navLinks = links.map((link, i) => {
         return (
-            <li key={link}>
+            <li key={i}>
                 <a href="#">{link}</a>
             </li>
         );

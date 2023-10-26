@@ -5,5 +5,13 @@
 
 .nav_menu {
     list-style-type: none;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.nav_menu a {
+    color: var(--gray);
+}
+.nav_menu a:hover {
+    text-decoration: underline;
+    color: white;
 }

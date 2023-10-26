@@ -4,6 +4,7 @@
 :root {
     --background_clr: hsl(218, 28%, 13%);
     --neutral_white: hsl(0, 0%, 100%);
+    --gray: hsl(212, 43%, 93%);
     --ff-body: "Open Sans", sans-serif;
     --ff-headings: "Raleway", sans-serif;
 }
@@ -14,7 +15,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--background_clr);
-    color: var(--neutral_white);
+    color: var(--gray);
     font-size: 14px;
     padding: 3rem 4rem;
 }
