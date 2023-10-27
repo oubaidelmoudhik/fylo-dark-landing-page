@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import phoneIcon from "./icon-phone.svg";
 import emailIcon from "./icon-email.svg";
+import locationIcon from "./icon-location.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebookF,
@@ -18,14 +19,17 @@ function FooterMenu({ items }) {
 
 function Footer() {
     return (
-        <footer className="footer flex">
+        <footer className="footer grid">
             <div>
                 <Logo />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua
-                </p>
+                <div className="flex align_start">
+                    <img src={locationIcon} alt="" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua
+                    </p>
+                </div>
             </div>
             <div>
                 <div>
@@ -37,13 +41,15 @@ function Footer() {
                     <span>example@fylo.com</span>
                 </div>
             </div>
-            <div>
-                <FooterMenu items={["About Us", "Jobs", "Press", "Blog"]} />
+            <div className="footer_nav flex">
+                <div>
+                    <FooterMenu items={["About Us", "Jobs", "Press", "Blog"]} />
+                </div>
+                <div>
+                    <FooterMenu items={["Contact Us", "Terms", "Privacy"]} />
+                </div>
             </div>
-            <div>
-                <FooterMenu items={["Contact Us", "Terms", "Privacy"]} />
-            </div>
-            <div>
+            <div className="socials flex">
                 <FontAwesomeIcon icon={faFacebookF} />
                 <FontAwesomeIcon icon={faTwitter} />
                 <FontAwesomeIcon icon={faInstagram} />

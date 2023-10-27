@@ -4,7 +4,7 @@ function MenuItem({ links }) {
     let navLinks = links.map((link, i) => {
         return (
             <li key={i}>
-                <a href="#">{link}</a>
+                <button>{link}</button>
             </li>
         );
     });

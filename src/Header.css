@@ -8,10 +8,14 @@
     gap: 3rem;
 }
 
-.nav_menu a {
+.nav_menu button {
     color: var(--gray);
+    background: none;
+    outline: none;
+    border: none;
 }
-.nav_menu a:hover {
+.nav_menu button:hover {
     text-decoration: underline;
     color: white;
+    cursor: pointer;
 }

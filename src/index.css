@@ -24,3 +24,14 @@ body {
 .flex {
     display: flex;
 }
+.grid {
+    display: grid;
+}
+
+.align_start {
+    align-items: start;
+}
+
+.justify_center {
+    justify-content: center;
+}
