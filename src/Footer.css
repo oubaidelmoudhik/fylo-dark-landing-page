@@ -1,3 +1,32 @@
 .footer {
+    background-color: var(--footer_background_clr);
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    gap: 3rem;
+}
+
+.footer_info {
+    gap: 1.5rem;
+}
+.footer_info div {
+    gap: 1rem;
+}
+
+.socials {
+    gap: 1rem;
+}
+.footer_nav {
+    gap: 3rem;
+}
+.footer_nav_list {
+    list-style-type: none;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.social_icon {
+    font-size: 20px;
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 7px;
 }

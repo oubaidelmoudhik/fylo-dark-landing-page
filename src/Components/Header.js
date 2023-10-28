@@ -13,7 +13,7 @@ function MenuItem({ links }) {
 
 function Header() {
     return (
-        <header className="header flex">
+        <header className="header container_padding flex ">
             <Logo />
             <ul className="nav_menu flex">
                 <MenuItem links={["Features", "Team", "Sign In"]} />

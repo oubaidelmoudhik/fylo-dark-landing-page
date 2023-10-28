@@ -11,16 +11,16 @@ import {
 
 function FooterMenu({ items }) {
     let menuList = items.map((item) => {
-        return <li>{item}</li>;
+        return <li className="footer_nav_item">{item}</li>;
     });
 
-    return <ul>{menuList}</ul>;
+    return <ul className="footer_nav_list flex">{menuList}</ul>;
 }
 
 function Footer() {
     return (
-        <footer className="footer grid">
-            <div>
+        <footer className="footer grid container_padding">
+            <div className="footer_info grid">
                 <Logo />
                 <div className="flex align_start">
                     <img src={locationIcon} alt="" />
@@ -32,11 +32,11 @@ function Footer() {
                 </div>
             </div>
             <div>
-                <div>
+                <div className="flex">
                     <img src={phoneIcon} alt="" />
                     <span>+1-543-123-4567</span>
                 </div>
-                <div>
+                <div className="flex">
                     <img src={emailIcon} alt="" />
                     <span>example@fylo.com</span>
                 </div>
@@ -50,9 +50,9 @@ function Footer() {
                 </div>
             </div>
             <div className="socials flex">
-                <FontAwesomeIcon icon={faFacebookF} />
-                <FontAwesomeIcon icon={faTwitter} />
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faFacebookF} className="social_icon" />
+                <FontAwesomeIcon icon={faTwitter} className="social_icon" />
+                <FontAwesomeIcon icon={faInstagram} className="social_icon" />
             </div>
         </footer>
     );

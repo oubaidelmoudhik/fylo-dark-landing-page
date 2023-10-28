@@ -1,6 +1,7 @@
 .header {
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.5rem;
 }
 
 .nav_menu {

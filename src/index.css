@@ -3,6 +3,7 @@
 
 :root {
     --background_clr: hsl(218, 28%, 13%);
+    --footer_background_clr: hsl(216, 53%, 9%);
     --neutral_white: hsl(0, 0%, 100%);
     --gray: hsl(212, 43%, 93%);
     --ff-body: "Open Sans", sans-serif;
@@ -17,12 +18,17 @@ body {
     background-color: var(--background_clr);
     color: var(--gray);
     font-size: 14px;
-    padding: 3rem 4rem;
 }
 
 /* Utility classes */
+.container_padding {
+    padding: 0rem 3.5rem;
+}
 .flex {
     display: flex;
+}
+.column {
+    flex-direction: column;
 }
 .grid {
     display: grid;
